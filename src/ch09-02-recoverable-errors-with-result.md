@@ -522,7 +522,7 @@ integers when they exit: programs that exit successfully return the integer
 `0`, and programs that error return some integer other than `0`. Rust also
 returns integers from executables to be compatible with this convention.
 
-The `main` function may return any types that implement [the
+The `main` function may return any types that implement the [
 `std::process::Termination` trait][termination]<!-- ignore -->, which contains
 a function `report` that returns an `ExitCode`. Consult the standard library
 documentation for more information on implementing the `Termination` trait for
